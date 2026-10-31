@@ -1,0 +1,42 @@
+{
+  "name": "breefer/breefer",
+  "description": "Performance-first, developer-friendly page builder for WordPress.",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0-or-later",
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "php-stubs/woocommerce-stubs": "^9.5",
+    "php-stubs/wordpress-stubs": "^6.7",
+    "phpstan/phpstan": "^2.1",
+    "phpunit/phpunit": "^10.5",
+    "squizlabs/php_codesniffer": "^3.11",
+    "szepeviktor/phpstan-wordpress": "^2.0",
+    "wp-coding-standards/wpcs": "^3.1",
+    "yoast/phpunit-polyfills": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Breefer\\": "includes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Breefer\\Tests\\": "tests/php/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "analyse": "phpstan analyse --memory-limit=1G",
+    "lint": "phpcs",
+    "lint:fix": "phpcbf"
+  }
+}

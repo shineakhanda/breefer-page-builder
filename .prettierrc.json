@@ -1,0 +1,16 @@
+{
+  "printWidth": 100,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "useTabs": true,
+  "trailingComma": "all",
+  "arrowParens": "always",
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.cjs", "*.json", "*.md"],
+      "options": {
+        "useTabs": false
+      }
+    }
+  ]
+}

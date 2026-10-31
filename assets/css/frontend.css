@@ -1,0 +1,442 @@
+/*
+ * Breefer - frontend base styles.
+ *
+ * Loaded only on pages that render a Breefer document. Widget-specific CSS is
+ * generated per node and inlined next to the markup.
+ */
+
+.breefer-canvas {
+	box-sizing: border-box;
+	width: 100%;
+	color: var(--br-color-text, #1e1735);
+	font-family: var(
+		--br-font-body,
+		'Inter',
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		'Helvetica Neue',
+		Arial,
+		sans-serif
+	);
+	font-size: var(--br-size-base, 16px);
+	line-height: var(--br-line-height, 1.6);
+	-webkit-font-smoothing: antialiased;
+}
+
+.breefer-canvas *,
+.breefer-canvas *::before,
+.breefer-canvas *::after {
+	box-sizing: border-box;
+}
+
+.breefer-canvas .br-node {
+	position: relative;
+	width: 100%;
+}
+
+.breefer-canvas .br-container {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.breefer-canvas .br-heading {
+	margin: 0;
+	color: inherit;
+	font-family: var(--br-font-heading, inherit);
+	font-weight: var(--br-heading-weight, 700);
+	line-height: 1.12;
+	letter-spacing: -0.02em;
+}
+
+.breefer-canvas .br-heading:empty {
+	display: none;
+}
+
+.breefer-canvas .br-text {
+	color: inherit;
+}
+
+.breefer-canvas .br-text > *:first-child {
+	margin-top: 0;
+}
+
+.breefer-canvas .br-text > *:last-child {
+	margin-bottom: 0;
+}
+
+.breefer-canvas .br-button-wrap {
+	display: block;
+}
+
+.breefer-canvas .br-btn {
+	display: inline-block;
+	padding: 14px 28px;
+	border-radius: 99px;
+	background: var(--br-color-primary, #7c5cfc);
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 1.2;
+	text-decoration: none;
+	transition:
+		filter 0.15s ease,
+		transform 0.15s ease;
+}
+
+.breefer-canvas .br-btn:hover {
+	filter: brightness(0.94);
+	transform: translateY(-1px);
+	color: inherit;
+}
+
+.breefer-canvas .br-image {
+	margin: 0;
+}
+
+.breefer-canvas .br-image img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.breefer-canvas .br-divider {
+	width: 100%;
+	margin: 0 auto;
+	border: 0;
+	border-top: 1px solid var(--br-color-border, #e8e1f7);
+}
+
+.breefer-canvas .br-spacer {
+	width: 100%;
+	height: 40px;
+}
+
+.breefer-canvas .br-iconbox {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 24px;
+	border-radius: 18px;
+}
+
+.breefer-canvas .br-iconbox-icon {
+	width: 1em;
+	height: 1em;
+	font-size: 32px;
+}
+
+.breefer-canvas .br-icon {
+	width: 1em;
+	height: 1em;
+	flex: none;
+}
+
+.breefer-canvas .br-icon-wrap {
+	display: inline-flex;
+}
+
+.breefer-canvas .br-icon-list {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.breefer-canvas .br-icon-list li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.breefer-canvas .br-icon-list-icon {
+	flex: none;
+	width: 1em;
+	height: 1em;
+}
+
+.breefer-canvas .br-video {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	background: #16112a;
+}
+
+.breefer-canvas .br-video iframe,
+.breefer-canvas .br-video video {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.breefer-canvas .br-video.is-empty {
+	display: grid;
+	place-items: center;
+	min-height: 180px;
+	color: #c3b6e8;
+	font-size: 13px;
+}
+
+.breefer-canvas .br-stars {
+	display: inline-flex;
+	gap: 4px;
+	color: #f5b301;
+}
+
+.breefer-canvas .br-star {
+	flex: none;
+	width: 1em;
+	height: 1em;
+}
+
+.breefer-canvas .br-progress {
+	width: 100%;
+}
+
+.breefer-canvas .br-progress-head {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 8px;
+	font-size: 13px;
+}
+
+.breefer-canvas .br-progress-track {
+	width: 100%;
+	height: 10px;
+	overflow: hidden;
+	border-radius: 99px;
+	background: #ece8ff;
+}
+
+.breefer-canvas .br-progress-fill {
+	height: 100%;
+	border-radius: 99px;
+	background: #7c5cfc;
+}
+
+/* ---------------------------------------------------------- WooCommerce */
+
+.breefer-canvas .br-woo-products img {
+	max-width: 100%;
+	height: auto;
+}
+
+.breefer-canvas .br-woo-products .price {
+	color: var(--br-color-primary, #7c5cfc);
+	font-weight: 700;
+}
+
+.breefer-canvas .br-product-title {
+	margin: 0 0 12px;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.15;
+	letter-spacing: -0.02em;
+}
+
+.breefer-canvas .br-product-price {
+	margin-bottom: 16px;
+	color: #7c5cfc;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.breefer-canvas .br-product-image img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
+
+.breefer-canvas .br-product-excerpt,
+.breefer-canvas .br-product-description {
+	color: #4c4463;
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.breefer-canvas .br-product-sku {
+	color: #7d7395;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	font-size: 12px;
+}
+
+.breefer-canvas .br-product-gallery {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 10px;
+}
+
+.breefer-canvas .br-product-gallery img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.breefer-canvas .br-product-cart form.cart {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+	margin: 0;
+}
+
+.breefer-canvas .br-woo-cart .widget_shopping_cart_content {
+	font-size: 14px;
+}
+
+.breefer-canvas .br-woo-categories ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.breefer-canvas .br-woo-categories li {
+	padding: 8px 0;
+	border-bottom: 1px solid #e8e1f7;
+}
+
+.breefer-canvas .br-woo-categories a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.breefer-canvas .br-woo-categories a:hover {
+	color: #7c5cfc;
+}
+
+.breefer-woo-wrap {
+	width: 100%;
+}
+
+.breefer-woo-content {
+	width: 100%;
+}
+
+/* Page layouts. */
+.breefer-full-width,
+.breefer-canvas-page-content {
+	width: 100%;
+	max-width: none;
+	margin: 0;
+	padding: 0;
+}
+
+.breefer-full-width {
+	width: 100vw;
+	max-width: 100vw;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+}
+
+.breefer-canvas-page-content {
+	min-height: 100vh;
+}
+
+body.breefer-layout-canvas {
+	margin: 0;
+	background: #ffffff;
+}
+
+body.breefer-layout-full {
+	overflow-x: hidden;
+}
+
+/* Tabs + accordion. */
+.breefer-canvas .br-tabs {
+	width: 100%;
+}
+
+.breefer-canvas .br-tabs-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	border-bottom: 1px solid #e8e1f7;
+}
+
+.breefer-canvas .br-tabs-nav button {
+	appearance: none;
+	margin: 0;
+	padding: 10px 16px;
+	border: 1px solid transparent;
+	border-bottom: 0;
+	border-radius: 10px 10px 0 0;
+	background: transparent;
+	color: #4c4463;
+	font: inherit;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.3;
+	cursor: pointer;
+}
+
+.breefer-canvas .br-tabs-nav button.is-active {
+	border-color: #e8e1f7;
+	background: #f7f4fe;
+	color: #7c5cfc;
+}
+
+.breefer-canvas .br-tab-panel {
+	padding: 18px 0;
+}
+
+.breefer-canvas .br-tab-panel[hidden] {
+	display: none;
+}
+
+.breefer-canvas .br-accordion {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.breefer-canvas .br-accordion-item {
+	overflow: hidden;
+	border: 1px solid #e8e1f7;
+	border-radius: 10px;
+	background: #f7f4fe;
+}
+
+.breefer-canvas .br-accordion summary {
+	padding: 12px 16px;
+	color: #1e1735;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.breefer-canvas .br-accordion-content {
+	padding: 0 16px 16px;
+	color: #4c4463;
+}
+
+.breefer-canvas .br-iconbox-title {
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.3;
+}
+
+.breefer-canvas .br-iconbox-text {
+	margin: 0;
+	color: #7d7395;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+/* Standalone preview page. */
+.breefer-preview-body {
+	margin: 0;
+	background: #efeafb;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.breefer-canvas .br-btn {
+		transition: none;
+	}
+}

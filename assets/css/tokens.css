@@ -1,0 +1,165 @@
+/*
+ * Breefer - design tokens
+ *
+ * Shared by the PHP admin screens and the React editor. The palette family
+ * intentionally mirrors Minimal Admin so both products feel like one suite.
+ * PHP can override these values at runtime by printing a :root block with
+ * the Palette::css() helper.
+ */
+
+:root {
+	color-scheme: light;
+
+	/* Accent */
+	--breefer-accent: #7c5cfc;
+	--breefer-accent-2: #a78bfa;
+	--breefer-accent-soft: #ece8ff;
+	--breefer-accent-contrast: #ffffff;
+
+	/* Sidebar / brand surfaces */
+	--breefer-sidebar: #4b2d8a;
+	--breefer-sidebar-2: #352066;
+	--breefer-sidebar-text: #f7f4ff;
+	--breefer-sidebar-muted: #c3b6e8;
+
+	/* Neutrals */
+	--breefer-bg: #efeafb;
+	--breefer-surface: #ffffff;
+	--breefer-surface-2: #f7f4fe;
+	--breefer-text: #1e1735;
+	--breefer-muted: #7d7395;
+	--breefer-border: #e8e1f7;
+
+	/* Status */
+	--breefer-warn: #e9b949;
+	--breefer-danger: #e35757;
+	--breefer-info: #2f80ed;
+
+	/* Typography */
+	--breefer-font-sans:
+		'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+		sans-serif;
+	--breefer-font-mono:
+		ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+	/* Shape */
+	--breefer-radius-xs: 8px;
+	--breefer-radius-sm: 10px;
+	--breefer-radius-md: 14px;
+	--breefer-radius-lg: 22px;
+	--breefer-radius-xl: 26px;
+	--breefer-radius-pill: 99px;
+
+	/* Elevation */
+	--breefer-shadow-sm: 0 10px 24px -20px rgba(30, 23, 53, 0.45);
+	--breefer-shadow-md: 0 24px 54px -42px rgba(30, 23, 53, 0.55);
+	--breefer-shadow-lg: 0 34px 70px -40px rgba(30, 23, 53, 0.65);
+
+	/* Focus */
+	--breefer-ring: 0 0 0 2px var(--breefer-surface), 0 0 0 4px var(--breefer-accent);
+
+	/* Motion */
+	--breefer-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+	--breefer-duration: 0.18s;
+
+	/* Editor chrome */
+	--breefer-topbar-height: 56px;
+	--breefer-statusbar-height: 34px;
+}
+
+/* Editor theme toggle. Wins over the runtime :root palette because of the
+   extra attribute selector. */
+:root[data-breefer-theme='light'] {
+	color-scheme: light;
+	--breefer-accent: #7c5cfc;
+	--breefer-accent-2: #a78bfa;
+	--breefer-accent-soft: #ece8ff;
+	--breefer-accent-contrast: #ffffff;
+	--breefer-sidebar: #4b2d8a;
+	--breefer-sidebar-2: #352066;
+	--breefer-sidebar-text: #f7f4ff;
+	--breefer-sidebar-muted: #c3b6e8;
+	--breefer-bg: #efeafb;
+	--breefer-surface: #ffffff;
+	--breefer-surface-2: #f7f4fe;
+	--breefer-text: #1e1735;
+	--breefer-muted: #7d7395;
+	--breefer-border: #e8e1f7;
+	--breefer-warn: #e9b949;
+	--breefer-danger: #e35757;
+	--breefer-info: #2f80ed;
+}
+
+:root[data-breefer-theme='dark'] {
+	color-scheme: dark;
+	--breefer-accent: #b7a4ff;
+	--breefer-accent-2: #d8ccff;
+	--breefer-accent-soft: #2a2145;
+	--breefer-accent-contrast: #17102b;
+	--breefer-sidebar: #1a1230;
+	--breefer-sidebar-2: #110b21;
+	--breefer-sidebar-text: #f3efff;
+	--breefer-sidebar-muted: #a89cc9;
+	--breefer-bg: #0d0917;
+	--breefer-surface: #151022;
+	--breefer-surface-2: #1d1630;
+	--breefer-text: #efeaff;
+	--breefer-muted: #a49ac0;
+	--breefer-border: #2b2342;
+	--breefer-warn: #f2cd6b;
+	--breefer-danger: #ff7a7a;
+	--breefer-info: #8bb8ff;
+}
+
+/* ---------------------------------------------------------- base reset */
+
+.breefer-admin,
+.breefer-admin *,
+.breefer-admin *::before,
+.breefer-admin *::after,
+#breefer-editor-root,
+#breefer-editor-root *,
+#breefer-editor-root *::before,
+#breefer-editor-root *::after {
+	box-sizing: border-box;
+}
+
+.breefer-admin {
+	color: var(--breefer-text);
+	font-family: var(--breefer-font-sans);
+	font-size: 14px;
+	line-height: 1.55;
+	-webkit-font-smoothing: antialiased;
+}
+
+.breefer-admin h1,
+.breefer-admin h2,
+.breefer-admin h3,
+.breefer-admin h4,
+.breefer-admin p,
+.breefer-admin ul,
+.breefer-admin ol,
+.breefer-admin figure {
+	margin: 0;
+	color: inherit;
+}
+
+.breefer-admin a:focus,
+.breefer-admin button:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+.breefer-admin a:focus-visible,
+.breefer-admin button:focus-visible,
+.breefer-admin input:focus-visible,
+.breefer-admin select:focus-visible,
+.breefer-admin summary:focus-visible {
+	outline: 2px solid var(--breefer-accent);
+	outline-offset: 2px;
+}
+
+.breefer-admin img,
+.breefer-admin svg {
+	max-width: 100%;
+}

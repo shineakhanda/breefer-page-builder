@@ -1,0 +1,865 @@
+# Copyright (C) 2026 Breefer
+# This file is distributed under the GPL-2.0-or-later license.
+msgid ""
+msgstr ""
+"Project-Id-Version: Breefer 0.1.0\n"
+"Report-Msgid-Bugs-To: https://breefer.dev/support\n"
+"POT-Creation-Date: 2026-10-22T00:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Breefer build\n"
+"X-Domain: breefer\n"
+
+#: templates/admin/dashboard.php
+msgid "%1$d of %2$d healthy"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "256 MB or more is recommended for the editor build."
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Access"
+msgstr ""
+
+#: includes/Admin/Menu.php includes/PostTypes/Templates.php
+msgid "Add template"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Administrators always keep access. Choose the lowest role that should also be able to build."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "All templates"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Appearance"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Arrow down"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Arrow left"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Arrow right"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Arrow up"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Author"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Autosave interval"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Award"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Bag"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Bolt"
+msgstr ""
+
+#: includes/Admin/Menu.php includes/Admin/MetaBox.php templates/admin/settings.php
+msgid "Breefer"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Breefer %s · Builder core"
+msgstr ""
+
+#: includes/Frontend/Frontend.php
+msgid "Breefer Canvas"
+msgstr ""
+
+#: includes/Admin/EditorPage.php
+msgid "Breefer Editor"
+msgstr ""
+
+#: includes/Admin/BuilderEntry.php
+msgid "Breefer page"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Breefer purges through each plugin’s native hooks when a template is saved."
+msgstr ""
+
+#: includes/Activation.php
+msgid "Breefer requirements not met"
+msgstr ""
+
+#: breefer.php
+msgid "Breefer requires PHP %1$s or newer. This server runs PHP %2$s."
+msgstr ""
+
+#: includes/Activation.php
+msgid "Breefer requires PHP %s or newer. The plugin was deactivated."
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Breefer requires PHP 8.2 or newer."
+msgstr ""
+
+#: includes/Plugin.php
+msgid "Breefer requires WordPress %1$s or newer. This site runs WordPress %2$s."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Browse templates"
+msgstr ""
+
+#: includes/Documents/Document.php
+msgid "Build something fast."
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Builder role"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Built"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Cache rendered output"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Calendar"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Camera"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Canvas width"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Cart"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Change appearance"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Changes apply to the editor and to future renders."
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Check"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Check circle"
+msgstr ""
+
+#: includes/Widgets/Button.php
+msgid "Click here"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Clock"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Close"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Cloud"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Code"
+msgstr ""
+
+#: includes/Admin/Assets.php
+msgid "Copied"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Copy snippet"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Create a template"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Credit card"
+msgstr ""
+
+#: templates/admin/dashboard.php templates/admin/settings.php
+msgid "Dark"
+msgstr ""
+
+#: includes/Admin/Menu.php
+msgid "Dashboard"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Database"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Defaults applied when a builder session opens."
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Defer interactive widgets and custom blocks until they are visible."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Design it here. Ship static HTML."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Design language"
+msgstr ""
+
+#: templates/admin/meta-box.php
+msgid "Design this page visually. Breefer renders static HTML with no page-builder runtime on the frontend."
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Desktop canvas width in pixels, before breakpoint scaling."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Developer API"
+msgstr ""
+
+#: includes/Rest/TemplatesController.php
+msgid "Document not found."
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Download"
+msgstr ""
+
+#: includes/Admin/BuilderEntry.php includes/PostTypes/Templates.php
+msgid "Edit with Breefer"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Editor"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Editor bundle"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Editor defaults"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Editor defaults, performance posture, and who gets to build with Breefer."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Environment"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Every page follows the same four stages. Nothing heavier ships than the page actually uses."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Extract"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Extract the rules a page uses and inline them in the head."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Filters are stable from the first release."
+msgstr ""
+
+#: includes/Admin/BuilderEntry.php includes/Admin/DashboardPage.php includes/Admin/EditorPage.php includes/Admin/SettingsPage.php
+msgid "Forbidden"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Frontend CSS"
+msgstr ""
+
+#: templates/admin/dashboard.php templates/admin/settings.php
+msgid "Frontend JS"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Frontend output stays static HTML by default. These switches control the optimisations around it."
+msgstr ""
+
+#: includes/Documents/Document.php
+msgid "Get started"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Gift"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Globe"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Grants the manage_breefer capability to the selected role."
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Grid"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Heart"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Home"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Hydrate"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Image"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Inline critical CSS"
+msgstr ""
+
+#: templates/admin/meta-box.php
+msgid "Insert this template anywhere with:"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Interactive islands arrive later. A basic Breefer page ships zero JavaScript."
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Layers"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Layout"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Lazy islands"
+msgstr ""
+
+#: templates/admin/dashboard.php templates/admin/settings.php
+msgid "Light"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Lighthouse"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Link"
+msgstr ""
+
+#: includes/Admin/EditorPage.php
+msgid "Loading Breefer…"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Lock"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Mail"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Map pin"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Memory limit"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Menu"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Message"
+msgstr ""
+
+#: includes/Utils/Palette.php
+msgid "Midnight"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Minus"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Missing"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Moon"
+msgstr ""
+
+#: includes/Admin/Menu.php templates/admin/dashboard.php
+msgid "New page"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "New pages and posts open in Breefer instead of the WordPress editor. Existing content can still be edited in WordPress."
+msgstr ""
+
+#: includes/PostTypes/Templates.php templates/admin/dashboard.php
+msgid "New template"
+msgstr ""
+
+#: includes/Rest/TemplatesController.php
+msgid "No document data was sent."
+msgstr ""
+
+#: includes/PostTypes/Templates.php
+msgid "No templates found."
+msgstr ""
+
+#: includes/PostTypes/Templates.php
+msgid "No templates in the trash."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "No templates yet. Create one to see it here."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Node CSS is scoped and inlined with the content; unused rules never ship."
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "None detected"
+msgstr ""
+
+#: templates/admin/meta-box.php
+msgid "Not a WooCommerce template"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Not active"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Not writable"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Number of steps kept in memory and local storage."
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Object cache"
+msgstr ""
+
+#: includes/Utils/Palette.php
+msgid "Ocean"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Only /wp-content/uploads/breefer is used for generated assets."
+msgstr ""
+
+#: templates/admin/meta-box.php
+msgid "Open Breefer editor"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Page cache plugin"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Palettes are shared by the admin screens and the React editor."
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Performance"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Persistent"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Phone"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "PHP renderers emit semantic HTML and record the CSS each widget really used."
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "PHP runtime"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Pick up where you left off."
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Play"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Plus"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Prefetch internal links"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "px"
+msgstr ""
+
+#: includes/Widgets/StarRating.php
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Recent templates"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Redis or Memcached makes cached renders substantially cheaper."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Render"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Render pipeline"
+msgstr ""
+
+#: templates/admin/meta-box.php
+msgid "Render this page with Breefer"
+msgstr ""
+
+#: includes/Utils/Palette.php
+msgid "Rose"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Save changes"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Search"
+msgstr ""
+
+#: includes/PostTypes/Templates.php
+msgid "Search templates"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "sec"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Seconds between background saves while editing."
+msgstr ""
+
+#: includes/Frontend/Frontend.php
+msgid "Select a template"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Send"
+msgstr ""
+
+#: includes/Admin/Menu.php templates/admin/settings.php
+msgid "Settings"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Settings sections"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Shared with the Minimal Admin palette family."
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Shield"
+msgstr ""
+
+#: templates/admin/meta-box.php
+msgid "Shop / product archive"
+msgstr ""
+
+#: includes/PostTypes/Templates.php
+msgid "Shortcode"
+msgstr ""
+
+#: templates/admin/meta-box.php
+msgid "Single product"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Sliders"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Sparkles"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Star"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Star outline"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Start a page in Breefer instead of the block editor."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Start building"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Start from a seeded canvas and save a reusable design."
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "steps"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Store the finished HTML per template and query, invalidated on save."
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Sun"
+msgstr ""
+
+#: includes/Utils/Palette.php
+msgid "Sunset"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Tag"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Target"
+msgstr ""
+
+#: includes/PostTypes/Templates.php
+msgid "Template"
+msgstr ""
+
+#: includes/Utils/View.php
+msgid "Template \"%s\" could not be found."
+msgstr ""
+
+#: includes/Admin/Menu.php includes/PostTypes/Templates.php templates/admin/dashboard.php
+msgid "Templates"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Tested against the current 6.x release line."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "The builder is the default editor for new pages and posts. Canvas and full-width layouts work with block themes, plus responsive styles, manual resize, WooCommerce and 19 widgets."
+msgstr ""
+
+#: includes/Rest/TemplatesController.php
+msgid "The document could not be saved."
+msgstr ""
+
+#: includes/Admin/EditorPage.php
+msgid "The editor bundle is missing. Run \"npm install\" and \"npm run build\" in the plugin directory."
+msgstr ""
+
+#: templates/admin/meta-box.php
+msgid "The most recently edited template of each type replaces the matching WooCommerce template on the frontend."
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "The React editor is served from build/ after npm run build."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "The React editor writes a portable JSON tree. No shortcodes, no serialized markup."
+msgstr ""
+
+#: includes/Documents/Document.php
+msgid "This page is rendered by Breefer as static HTML. Edit it, add widgets, and save."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Three ways into the builder."
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "TTFB delta"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Tune autosave, history and the canvas width."
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Undo history"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Unknown"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Unlimited"
+msgstr ""
+
+#: includes/Widgets/Video.php
+msgid "Unsupported video URL"
+msgstr ""
+
+#: includes/Admin/BuilderEntry.php includes/Admin/EditorPage.php
+msgid "Untitled page"
+msgstr ""
+
+#: includes/Admin/BuilderEntry.php includes/Admin/EditorPage.php
+msgid "Untitled post"
+msgstr ""
+
+#: includes/Admin/EditorPage.php includes/PostTypes/Templates.php includes/Rest/TemplatesController.php
+msgid "Untitled template"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Upload"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Uploads directory"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Use Breefer by default"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "User"
+msgstr ""
+
+#: includes/Utils/Icons.php
+msgid "Users"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "v%s"
+msgstr ""
+
+#: includes/Widgets/Video.php
+msgid "Video"
+msgstr ""
+
+#: includes/PostTypes/Templates.php
+msgid "View template"
+msgstr ""
+
+#: includes/Utils/Palette.php
+msgid "Violet"
+msgstr ""
+
+#: includes/Utils/Palette.php
+msgid "Violet Dark"
+msgstr ""
+
+#: templates/admin/settings.php
+msgid "Warm same-origin pages on hover with a small opt-in prefetcher."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "What the current server gives Breefer to work with."
+msgstr ""
+
+#: templates/admin/meta-box.php
+msgid "While enabled, the builder output replaces the post content on the frontend. Your original content is kept and returns when you disable it."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Widgets"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Widgets, controls and editor panels can also be registered from PHP and JavaScript."
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Woo widgets and template hijacks stay dormant until WooCommerce is active."
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "WooCommerce"
+msgstr ""
+
+#: templates/admin/meta-box.php
+msgid "WooCommerce template"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "WordPress"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php
+msgid "Writable"
+msgstr ""
+
+#: includes/Admin/DashboardPage.php includes/Admin/SettingsPage.php
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#: includes/Admin/BuilderEntry.php
+msgid "You do not have permission to create pages."
+msgstr ""
+
+#: includes/Admin/EditorPage.php
+msgid "You do not have permission to edit this document."
+msgstr ""
+
+#: includes/Rest/TemplatesController.php
+msgid "You do not have permission to publish this content."
+msgstr ""
+
+#: includes/Admin/EditorPage.php
+msgid "You do not have permission to use the builder."
+msgstr ""
+

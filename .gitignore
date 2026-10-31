@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build output
+build/
+dist/
+coverage/
+
+# Tooling caches
+.phpunit.cache/
+.phpunit.result.cache
+.eslintcache
+
+# Local environment
+.env
+.env.local
+*.log
+.DS_Store
+Thumbs.db

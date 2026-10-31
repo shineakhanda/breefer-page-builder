@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ruleset name="Breefer">
+	<description>Breefer coding standards.</description>
+
+	<file>.</file>
+
+	<exclude-pattern>vendor/*</exclude-pattern>
+	<exclude-pattern>node_modules/*</exclude-pattern>
+	<exclude-pattern>build/*</exclude-pattern>
+	<exclude-pattern>tests/*</exclude-pattern>
+	<exclude-pattern>templates/*</exclude-pattern>
+
+	<arg name="extensions" value="php" />
+	<arg name="colors" />
+	<arg value="sp" />
+
+	<rule ref="WordPress" />
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="breefer" />
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="breefer" />
+				<element value="Breefer" />
+				<element value="BREEFER" />
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.Files.FileName">
+		<properties>
+			<property name="strict_class_file_names" value="false" />
+		</properties>
+	</rule>
+
+	<config name="minimum_supported_wp_version" value="6.2" />
+	<config name="testVersion" value="8.2-" />
+</ruleset>
